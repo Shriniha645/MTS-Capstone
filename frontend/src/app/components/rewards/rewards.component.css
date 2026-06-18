@@ -2,21 +2,21 @@
   display: flex;
   align-items: center;
   gap: 12px;
-  color: #044014;
+  color: #630832;
   font-size: 2rem;
   font-weight: 700;
   margin-bottom: 4px;
 }
 
 .title-icon {
-  color: #368727;
+  color: #ca6a11;
   font-size: 2rem;
   width: 2rem;
   height: 2rem;
 }
 
 .page-subtitle {
-  color: #044014;
+  color: #630832;
   opacity: 0.65;
   margin: 0;
 }
@@ -38,7 +38,7 @@
   width: 72px;
   height: 72px;
   border-radius: 50%;
-  background: linear-gradient(135deg, #368727, #044014);
+  background: linear-gradient(135deg, #630832, #044014);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -46,36 +46,36 @@
 }
 
 .points-icon {
-  color: white;
+  color: rgb(247, 250, 54);
   font-size: 36px;
   width: 36px;
   height: 36px;
 }
 
 .label-text {
-  color: #044014;
-  opacity: 0.65;
-  font-size: 0.9rem;
+  color: #630832;
+  opacity: 0.9;
+  font-size: 2rem;
 }
 
 .points-value {
-  color: #044014;
+  color: #630832;
   font-size: 3rem;
   font-weight: 800;
   line-height: 1;
 }
 
 .points-label {
-  color: #368727;
+  color: #630832;
   font-size: 1.2rem;
-  font-weight: 600;
+  font-weight: 900;
   vertical-align: bottom;
 }
 
 /* Table */
 .rewards-table th {
   background-color: rgba(4, 64, 20, 0.06);
-  color: #044014;
+  color: #630832;
   font-weight: 600;
   border-bottom: 2px solid rgba(54, 135, 39, 0.2);
 }
@@ -90,7 +90,7 @@
 }
 
 .points-badge {
-  background: linear-gradient(135deg, #368727, #044014);
+  background: linear-gradient(135deg, #630832, #044014);
   color: white;
   padding: 4px 12px;
   border-radius: 20px;
@@ -115,6 +115,6 @@
 }
 
 .btn-glow {
-  background: linear-gradient(135deg, #368727, #044014);
+  background: linear-gradient(135deg, #630832, #044014);
   color: white;
 }

@@ -41,15 +41,10 @@
     <!-- How rewards work -->
     <mat-card class="glass-card">
       <mat-card-content class="p-4">
-        <div class="d-flex align-items-center gap-2 mb-3" style="color: #368727;">
-          <mat-icon>info</mat-icon>
-          <span class="fw-bold">How rewards work</span>
-        </div>
-        <ul class="mb-0" style="color: #044014; opacity: 0.85; line-height: 2;">
-          <li>Transfer must be <strong>successful</strong></li>
-          <li>Transfer amount must be <strong>greater than ₹100</strong></li>
-          <li>Sender and receiver must be <strong>different accounts</strong></li>
-          <li>Earn <strong>1 point per ₹100</strong> transferred (rounded down)</li>
+      
+        <ul class="mb-0" style="color: #630832; opacity: 1; line-height: 0.2;">
+      <mat-icon>trending_up</mat-icon><strong>          1 point</strong> for a successful transaction for <strong>more than Rs.100</strong>
+         
         </ul>
       </mat-card-content>
     </mat-card>
@@ -57,14 +52,14 @@
     <!-- History table -->
     <mat-card class="glass-card overflow-hidden">
       <mat-card-header class="p-4 border-bottom" style="border-color: rgba(54,135,39,0.2) !important;">
-        <mat-icon class="me-2" style="color: #368727;">history</mat-icon>
-        <mat-card-title class="mb-0" style="color: #044014;">Reward History</mat-card-title>
+        <mat-icon class="me-2" style="color: #630832;">history</mat-icon>
+        <mat-card-title class="mb-0" style="color: #630832;">Reward History</mat-card-title>
       </mat-card-header>
 
       <!-- Empty state -->
       <mat-card-content *ngIf="rewardSummary.history.length === 0"
                         class="text-center py-5 d-flex flex-column align-items-center gap-3">
-        <mat-icon class="opacity-25" style="color: #044014; font-size: 48px; width: 48px; height: 48px;">star_border</mat-icon>
+        <mat-icon class="opacity-25" style="color: #630832; font-size: 48px; width: 48px; height: 48px;">star_border</mat-icon>
         <h3 style="color: #044014;">No rewards yet</h3>
         <p style="color: #044014; opacity: 0.7;">
           Transfer more than ₹100 to another account to start earning points.
@@ -81,7 +76,7 @@
 
             <ng-container matColumnDef="index">
               <th mat-header-cell *matHeaderCellDef>#</th>
-              <td mat-cell *matCellDef="let entry; let i = index" style="color: #044014; opacity: 0.6;">
+              <td mat-cell *matCellDef="let entry; let i = index" style="color: #630832; opacity: 0.6;">
                 {{ i + 1 }}
               </td>
             </ng-container>
@@ -89,7 +84,7 @@
             <ng-container matColumnDef="transactionId">
               <th mat-header-cell *matHeaderCellDef>Transaction ID</th>
               <td mat-cell *matCellDef="let entry">
-                <span style="color: #368727;">#{{ entry.transactionLogId }}</span>
+                <span style="color: #630832;">#{{ entry.transactionLogId }}</span>
               </td>
             </ng-container>
 
@@ -109,7 +104,7 @@
 
             <ng-container matColumnDef="date">
               <th mat-header-cell *matHeaderCellDef>Date & Time</th>
-              <td mat-cell *matCellDef="let entry" style="color: #044014; opacity: 0.7;">
+              <td mat-cell *matCellDef="let entry" style="color: #630832; opacity: 0.7;">
                 <div class="d-flex align-items-center gap-1">
                   <mat-icon class="small-icon opacity-50">event</mat-icon>
                   {{ formatDate(entry.createdAt) }}

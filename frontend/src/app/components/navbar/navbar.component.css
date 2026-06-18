@@ -1,5 +1,5 @@
 .navbar {
-  background: #044014 !important;
+  background: #630832 !important;
   color: #ffffff !important;
   position: sticky;
   top: 0;
@@ -37,7 +37,7 @@
   font-size: 32px;
   width: 32px;
   height: 32px;
-  color: #6AD539;
+  color: #f06136;
 }
 
 .brand-name {
@@ -63,12 +63,12 @@
 }
 
 .navbar-links button:hover {
-  background: rgba(106, 213, 57, 0.1) !important;
+  background: rgba(138, 57, 118, 0.979) !important;
 }
 
 .navbar-links button.active {
   background: rgba(106, 213, 57, 0.2) !important;
-  color: #6AD539 !important;
+  color: #c2adc5 !important;
 }
 
 .navbar-links button mat-icon {

@@ -18,9 +18,9 @@
   width: 100%;
   background: #ffffff !important;
   backdrop-filter: blur(20px);
-  border: 2px solid #368727 !important;
+  border: 2px solid #720d3f !important;
   border-radius: 20px !important;
-  box-shadow: 0 10px 30px rgba(54, 135, 39, 0.15);
+  box-shadow: 0 10px 30px rgba(139, 31, 121, 0.15);
 }
 
 /* --- OVERLAP FIXES --- */
@@ -37,13 +37,13 @@
   padding: 0 10px !important;
   margin-left: -4px;
   transform: translateY(-36px) scale(0.85) !important; /* The Magic Lift */
-  color: #368727 !important;
+  color: #95a792 !important;
   z-index: 5;
 }
 
 /* 3. Fix Input Spacing: Ensure text doesn't hit the bottom or top */
 ::ng-deep .glass-input input.mat-mdc-input-element {
-  color: #044014 !important;
+  color: #06130a !important;
   padding-bottom: 5px !important;
 }
 
@@ -51,28 +51,28 @@
 ::ng-deep .glass-input .mat-mdc-form-field-icon-prefix,
 ::ng-deep .glass-input .mat-mdc-form-field-icon-suffix {
   padding: 12px 0 !important;
-  color: #368727;
+  color: #720d3f;
 }
 
 /* 5. Outline Color */
 ::ng-deep .glass-input .mdc-notched-outline__leading,
 ::ng-deep .glass-input .mdc-notched-outline__notch,
 ::ng-deep .glass-input .mdc-notched-outline__trailing {
-  border-color: #368727 !important;
+  border-color: #720d3f !important;
 }
 
 /* Focus State */
 ::ng-deep .glass-input.mat-form-field-focused .mdc-notched-outline__leading,
 ::ng-deep .glass-input.mat-form-field-focused .mdc-notched-outline__notch,
 ::ng-deep .glass-input.mat-form-field-focused .mdc-notched-outline__trailing {
-  border-color: #044014 !important;
+  border-color: #3a164e !important;
   border-width: 2px !important;
 }
 
 /* --- UI ELEMENTS --- */
 
 .btn-glow {
-  background: #368727 !important;
+  background: #720d3f !important;
   color: #ffffff !important;
   font-weight: 700 !important;
   border-radius: 12px !important;
@@ -80,7 +80,7 @@
 }
 
 .btn-glow:hover {
-  background: #6AD539 !important;
+  background: #dddf90 !important;
 }
 
 .glass-error {

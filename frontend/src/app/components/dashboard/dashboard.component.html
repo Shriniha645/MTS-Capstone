@@ -12,21 +12,21 @@
   <div *ngIf="!isLoading && account" class="dashboard-content">
     
     <div class="welcome-banner text-center mb-5">
-      <h1 class="display-5 fw-bold" style="color: #044014;">Welcome, {{ account.holderName }}!</h1>
-      <p class="subtitle fs-5">Manage your account and transactions</p>
+      <h1 class="display-5 fw-bold" style="color: #320b3b;">Welcome, {{ account.holderName }}!</h1>
+      <p class="subtitle fs-5"></p>
     </div>
 
     <!-- Reward points strip -->
     <div class="reward-strip mb-4 d-flex align-items-center justify-content-between px-4 py-3 rounded-3"
          (click)="navigateToRewards()" style="cursor: pointer;">
       <div class="d-flex align-items-center gap-3">
-        <mat-icon style="color: #f9a825; font-size: 28px; width: 28px; height: 28px;">emoji_events</mat-icon>
+        <mat-icon style="color: #927c17; font-size: 28px; width: 28px; height: 28px;">emoji_events</mat-icon>
         <div>
-          <p class="mb-0 small fw-semibold" style="color: #044014; opacity: 0.7;">Your Reward Points</p>
-          <span class="fw-bold fs-4" style="color: #044014;">{{ rewardPoints }} pts</span>
+          <p class="mb-0 small fw-semibold" style="color: #630832; opacity: 0.7;">Your Reward Points</p>
+          <span class="fw-bold fs-4" style="color: #630832;">{{ rewardPoints }} pts</span>
         </div>
       </div>
-      <div class="d-flex align-items-center gap-1" style="color: #368727;">
+      <div class="d-flex align-items-center gap-1" style="color: #630832;">
         <span class="small fw-semibold">View Details</span>
         <mat-icon>chevron_right</mat-icon>
       </div>
@@ -35,26 +35,26 @@
     <mat-card class="balance-card border-0 mb-5">
       <mat-card-content class="p-4">
         <div class="d-flex align-items-center mb-3">
-          <mat-icon class="balance-icon me-2 opacity-75" style="color: #368727;">account_balance_wallet</mat-icon>
-          <span class="fs-5 fw-medium" style="color: #044014; opacity: 0.7;">Current Balance</span>
+          <mat-icon class="balance-icon me-2 opacity-75" style="color: #630832;">account_balance_wallet</mat-icon>
+          <span class="fs-5 fw-medium" style="color: #630832; opacity: 0.7;">Current Balance</span>
         </div>
         
         <div class="balance-amount my-4">{{ formatCurrency(account.balance) }}</div>
         
         <div class="account-details-list">
           <div class="account-info d-flex justify-content-between py-3 border-bottom" style="border-color: rgba(54, 135, 39, 0.2) !important;">
-            <span class="info-label" style="color: #044014; opacity: 0.7;">Account ID</span>
-            <span class="info-value fw-bold" style="color: #044014;">{{ account.id }}</span>
+            <span class="info-label" style="color: #630832; opacity: 0.7;">Account ID</span>
+            <span class="info-value fw-bold" style="color: #630832;">{{ account.id }}</span>
           </div>
           <div class="account-info d-flex justify-content-between py-3 border-bottom" style="border-color: rgba(54, 135, 39, 0.2) !important;">
-            <span class="info-label" style="color: #044014; opacity: 0.7;">Status</span>
+            <span class="info-label" style="color: #630832; opacity: 0.7;">Status</span>
             <span class="info-value text-uppercase" [class]="'status-' + account.status.toLowerCase()">
               {{ account.status }}
             </span>
           </div>
           <div class="account-info d-flex justify-content-between py-3">
-            <span class="info-label" style="color: #044014; opacity: 0.7;">Last Updated</span>
-            <span class="info-value" style="color: #044014;">{{ account.lastupdatedAt | date: 'medium' }}</span>
+            <span class="info-label" style="color: #630832; opacity: 0.7;">Last Updated</span>
+            <span class="info-value" style="color: #630832;">{{ account.lastupdatedAt | date: 'medium' }}</span>
           </div>
         </div>
       </mat-card-content>
@@ -65,8 +65,8 @@
         <mat-card class="action-card h-100 border-0 pointer-cursor">
           <mat-card-content class="p-5 text-center">
             <mat-icon class="action-icon transfer-icon mb-3">send</mat-icon>
-            <h3 class="fw-bold h4" style="color: #044014;">Transfer Money</h3>
-            <p class="mb-0" style="color: #044014; opacity: 0.7;">Send money to another account</p>
+            <h3 class="fw-bold h4" style="color: #9bb13b;">Transfer Money</h3>
+            <p class="mb-0" style="color: #9bb13b; opacity: 0.7;">Send money to another account</p>
           </mat-card-content>
         </mat-card>
       </div>
@@ -75,8 +75,8 @@
         <mat-card class="action-card h-100 border-0 pointer-cursor">
           <mat-card-content class="p-5 text-center">
             <mat-icon class="action-icon history-icon mb-3">history</mat-icon>
-            <h3 class="fw-bold h4" style="color: #044014;">Transaction History</h3>
-            <p class="mb-0" style="color: #044014; opacity: 0.7;">View your transaction records</p>
+            <h3 class="fw-bold h4" style="color: #9bb13b;">Transaction History</h3>
+            <p class="mb-0" style="color: #9bb13b; opacity: 0.7;">View your transaction records</p>
           </mat-card-content>
         </mat-card>
       </div>
@@ -85,8 +85,8 @@
         <mat-card class="action-card h-100 border-0 pointer-cursor">
           <mat-card-content class="p-5 text-center">
             <mat-icon class="action-icon rewards-icon mb-3">star</mat-icon>
-            <h3 class="fw-bold h4" style="color: #044014;">Reward Points</h3>
-            <p class="mb-0" style="color: #044014; opacity: 0.7;">
+            <h3 class="fw-bold h4" style="color: #9bb13b;">Reward Points</h3>
+            <p class="mb-0" style="color: #9bb13b; opacity: 0.7;">
               {{ rewardPoints }} points earned
             </p>
           </mat-card-content>

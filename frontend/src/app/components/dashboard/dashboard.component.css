@@ -4,7 +4,7 @@
   min-height: 100vh;
   background-color: #ffffff;
   background-image: linear-gradient(135deg, #ffffff 0%, #f8fef8 100%);
-  color: #044014;
+  color: #400422;
   padding-top: 20px;
 }
 
@@ -12,34 +12,34 @@
 
 /* Main Glass Container - Balance Card */
 .balance-card {
-  background: #ffffff !important;
+  background: #dfd9dccc !important;
   backdrop-filter: blur(20px);
-  border: 2px solid #368727 !important;
+  border: 2px solid #863d5f !important;
   border-radius: 24px !important;
   box-shadow: 0 10px 30px rgba(54, 135, 39, 0.15) !important;
 }
 
 .balance-amount {
   font-size: 3.5rem;
-  font-weight: 800;
-  color: #6AD539; /* Professional Green */
+  font-weight: 400;
+  color: #720d3f; 
   text-shadow: 0 2px 10px rgba(106, 213, 57, 0.2);
 }
 
 /* Action Cards - Interactive Boxes */
 .action-card {
-  background: #ffffff !important;
-  border: 2px solid #368727 !important;
+  background: #630832 !important;
+  border: 2px solid #ac2a66 !important;
   border-radius: 20px !important;
   transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
   cursor: pointer;
-  box-shadow: 0 4px 15px rgba(54, 135, 39, 0.1);
+  box-shadow: 0 4px 15px rgba(136, 207, 123, 0.1);
 }
 
 .action-card:hover {
-  background: #f8fef8 !important;
+  background: #a7586f !important;
   transform: translateY(-8px);
-  border-color: #6AD539 !important;
+  border-color: #770749 !important;
   box-shadow: 0 8px 25px rgba(106, 213, 57, 0.2);
 }
 
@@ -49,13 +49,13 @@
   height: 56px;
 }
 
-.transfer-icon { color: #368727; }
-.history-icon { color: #044014; }
+.transfer-icon { color: #f9a825; }
+.history-icon { color: #f9a825; }
 .rewards-icon { color: #f9a825; }
 
 .reward-strip {
-  background: linear-gradient(135deg, rgba(249, 168, 37, 0.08), rgba(54, 135, 39, 0.06));
-  border: 1.5px solid rgba(249, 168, 37, 0.35);
+  background: linear-gradient(135deg, rgba(212, 178, 210, 0.753), rgba(54, 135, 39, 0.06));
+  border: 1.5px solid rgba(109, 31, 105, 0.35);
   transition: background 0.2s;
 }
 

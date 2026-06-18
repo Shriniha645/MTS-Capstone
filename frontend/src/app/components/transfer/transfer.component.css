@@ -18,7 +18,7 @@
   gap: 12px;
   font-size: 2rem;
   font-weight: 700;
-  color: #044014;
+  color: #630832;
   margin-bottom: 8px;
 }
 
@@ -26,11 +26,11 @@
   font-size: 2rem;
   width: 2rem;
   height: 2rem;
-  color: #368727;
+  color: #630832;
 }
 
 .page-subtitle {
-  color: #044014;
+  color: #630832;
   opacity: 0.7;
   font-size: 1.1rem;
 }
@@ -38,8 +38,8 @@
 .glass-card {
   background: #ffffff !important;
   backdrop-filter: blur(15px);
-  border: 2px solid #368727 !important;
-  border-radius: 20px !important;
+  border: 1px solid #630832 !important;
+  border-radius: 10px !important;
   box-shadow: 0 10px 30px rgba(54, 135, 39, 0.15);
 }
 
@@ -56,19 +56,19 @@
   background: #ffffff !important; /* Hide line behind label */
   padding: 0 10px !important;
   transform: translateY(-36px) scale(0.85) !important;
-  color: #368727 !important;
+  color: #630832 !important;
   z-index: 5;
 }
 
 /* 3. Prefix & Suffix Alignment */
 ::ng-deep .glass-input .mat-mdc-form-field-icon-prefix,
 ::ng-deep .glass-input .mat-mdc-form-field-icon-suffix {
-  color: #368727 !important;
+  color: #630832 !important;
   padding: 12px 0 !important;
 }
 
 .currency-prefix {
-  color: #368727;
+  color: #630832;
   font-weight: bold;
   margin-right: 8px;
   font-size: 1.1rem;
@@ -76,18 +76,18 @@
 
 /* 4. Input Text Color */
 ::ng-deep .glass-input input.mat-mdc-input-element {
-  color: #044014 !important;
+  color: #230824 !important;
 }
 
 /* --- UI ELEMENTS --- */
 
 .balance-amount {
-  color: #6AD539;
-  text-shadow: 0 2px 10px rgba(106, 213, 57, 0.2);
+  color: #630832;
+  text-shadow: 0 2px 10px rgba(77, 34, 94, 0.2);
 }
 
 .btn-glow {
-  background-color: #368727 !important;
+  background-color: #630832 !important;
   color: #ffffff !important;
   font-weight: 700 !important;
   border-radius: 12px !important;
@@ -95,7 +95,7 @@
 }
 
 .btn-glow:hover {
-  background-color: #6AD539 !important;
+  background-color: #b2ca2a !important;
 }
 
 /* Fix for hint text (Remaining Balance) */
