@@ -50,7 +50,7 @@ export class AuthService {
       return false;
     }
     
-    // Check if token is expired (basic check)
+    // Check if token is expired
     try {
       const payload = JSON.parse(atob(token.split('.')[1]));
       const expiry = payload.exp * 1000;

@@ -148,7 +148,7 @@ export class HistoryComponent implements OnInit {
     let filtered = [...this.allTransactions];
     const filters = this.filterForm.value;
     
-    // Date Range Filter - Apply preset dates first
+    // Date Range Filter
     let startDate: Date | null = null;
     let endDate: Date | null = null;
     

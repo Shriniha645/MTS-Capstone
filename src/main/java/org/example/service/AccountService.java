@@ -32,7 +32,7 @@ public class AccountService implements AccountServiceinterface {
     @Override
     @Transactional
     public void createAccount(AccountDto account) {
-        // This method is for backward compatibility, but you should use createAccount(CreateAccountDto) instead
+
         Account acc = new Account();
         acc.setHolderName(account.getHolderName());
         acc.setBalance(account.getBalance());

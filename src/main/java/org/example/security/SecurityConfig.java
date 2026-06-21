@@ -53,13 +53,13 @@ public class SecurityConfig {
                     .requestMatchers("/api/v1/auth/**").permitAll()
                     .requestMatchers("/swagger-ui/**", "/v3/api-docs/**", "/swagger-ui.html").permitAll()
 
-                    // Protected endpoints - require authentication
+                    //  require authentication
                     .requestMatchers("/api/v1/accounts/**").authenticated()
                     .requestMatchers("/api/v1/transfer").authenticated()
                     .requestMatchers("/api/v1/transactions/**").authenticated()
                     .requestMatchers("/api/v1/rewards/**").authenticated()
 
-                    // All other requests require authentication
+                
                     .anyRequest().authenticated()
             )
             .addFilterBefore(jwtFilter, UsernamePasswordAuthenticationFilter.class);

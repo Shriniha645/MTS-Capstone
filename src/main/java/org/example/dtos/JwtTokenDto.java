@@ -17,7 +17,7 @@ public class JwtTokenDto {
     public JwtTokenDto(String token) {
         this.token = token;
         this.type = "Bearer";
-        this.expiresIn = 3600000; // 1 hour in milliseconds
+        this.expiresIn = 3600000; 
     }
 }
 
